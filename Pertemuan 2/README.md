@@ -9,3 +9,4 @@
 
 # 2.1.3 Questions
 
+![tes](https://github.com/user-attachments/assets/7f19420d-2534-48f6-aa9d-efeac5487b57)
