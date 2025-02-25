@@ -25,9 +25,9 @@
 3. 3, print, changeClass, updateGPA
 
 4. Modify
-   ![Screenshot 2025-02-25 203436](https://github.com/user-attachments/assets/5ed3d974-1f8a-       45ab-b73a-2afae6c98a7e)
+   ![Screenshot 2025-02-25 203436](https://github.com/user-attachments/assets/5ed3d974-1f8a-45ab-b73a-2afae6c98a7e)
    Result
-   ![Screenshot 2025-02-25 203605](https://github.com/user-attachments/assets/0576bdec-9ae5-       4829-86b6-7d0d8d200ef8)
+   ![Screenshot 2025-02-25 203605](https://github.com/user-attachments/assets/0576bdec-9ae5-4829-86b6-7d0d8d200ef8)
 
 5. Checked via if else with if value above 4.0 return “Invalid GPA. Must be between 0.0 and        4.0.”, if grade >= 3.5 return ‘Excellent’, if grade >= 3.0          return ‘Good’, if grade >= 2.0       return ‘Fair’, if grade >= 0.0 && gpa <= 1.99 return ‘Poor’; if else or below return            ”Invalid GPA. Must be          between 0.0 and 4.0.”
 
