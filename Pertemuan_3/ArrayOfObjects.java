@@ -17,7 +17,7 @@ public class ArrayOfObjects {
             rectangleArray[i].weidth = sc.nextInt();
         }
 
-        for (int i = 0; i < 10; i++) {
+        for (int i = 0; i < 3; i++) {
             System.out.println("Rectangle " + i);
             System.out.println("width: " + rectangleArray[0].weidth + ", length: " + rectangleArray[0].length);
         }
