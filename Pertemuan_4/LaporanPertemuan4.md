@@ -19,3 +19,12 @@ else is the recursive process. If n is more than 1, then the function will call 
 
 4. The FactorialBF() method uses looping, calculating the factorial incrementally from 1 to n, making it more efficient and easy to understand. Whereas FactorialDC() uses recursion, calling itself until it reaches n = 1, then calculating the result backwards. Recursion makes the code more concise but takes up more memory, so it can cause stack overflow if n is too large. If you want a safer way for large values, use FactorialBF(), while if you want shorter code, use FactorialDC().
 
+# 5.3.3. Questions
+1. Brute Force (powerBF()) and Divide and Conquer (powerDC()) methods differ in calculating exponents. powerBF() uses iteration by multiplying as many times as the exponent value, so its time complexity is O(n). powerDC() uses the Divide and Conquer strategy, dividing the problem into smaller subproblems and combining the results recursively.
+
+2. The merging stage is in the code
+![image](https://github.com/user-attachments/assets/6aabe0b8-924e-4f36-9bf4-22ddb1999b8a)
+
+3. 
+
+
