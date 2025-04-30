@@ -3,11 +3,13 @@ package Pertemuan_4;
 public class Faktorial {
     int FactorialBF (int n) {
         int Facto = 1;
-        for (int i = 1; i <= n; i++) {
-            Facto = Facto * i;
+        int i = 1;
+        while (i <= n) {
+        Facto = Facto * i;
+        i++;
         }
-        return Facto;
-    }
+    return Facto;
+}
     
     int FactorialDC (int n) {
         if (n == 1) {
