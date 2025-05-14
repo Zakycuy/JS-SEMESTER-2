@@ -13,5 +13,5 @@
 
 # 2.1.2 Questions
 
-1. 
+1. because no student data has been entered into the linked list.
 
