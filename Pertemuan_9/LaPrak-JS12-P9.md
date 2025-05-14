@@ -21,5 +21,15 @@
 
 4. I think it affects because we cannot directly access to the tail but if we use the tail then we must always check whether the tail is at the end or the next of the tail is null. if not using it, you must use traverse to access the last node or when you want to add a node at the end (addLast).
 
+# 2.2.2 Output verification
+
+![image](https://github.com/user-attachments/assets/f099fae2-3f6e-4d45-a16a-2155a3ed1dd4)
+
+# 2.2.3 Questions
+
+1. because when we want to remove we need what node we want to remove and its location must not be the same as the key, or it means that when we want to remove then after the key so that it is not interrupted if it is in the middle of the LinkedList Data.
+
+2. So the purpose of the code is to delete a certain node by passing through the node to be deleted, which means placing temp directly on the node after the one to be deleted or by changing the next reference of the previous node (temp) to directly point to the node after the node to be deleted
+
 
 
