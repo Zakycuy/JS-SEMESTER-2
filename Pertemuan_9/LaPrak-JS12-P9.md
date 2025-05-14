@@ -9,3 +9,9 @@
 
 # 2.1.1 Verification
 
+![Screenshot 2025-05-14 154638](https://github.com/user-attachments/assets/9bab9a8b-8317-409a-837a-186399bc0c4f)
+
+# 2.1.2 Questions
+
+1. 
+
