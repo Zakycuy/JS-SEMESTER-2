@@ -1,7 +1,5 @@
 package Pertemuan_9;
 
-import Pertemuan_8.Student;
-
 public class SingleLinkedList {
     Node23 head;
     Node23 tail;
@@ -77,8 +75,5 @@ public class SingleLinkedList {
                 tail = temp.next;
             }
         }
-    }
-    public static void main(String[] args) {
-        SingleLinkedList sll = new SingleLinkedList();
     }
 }
