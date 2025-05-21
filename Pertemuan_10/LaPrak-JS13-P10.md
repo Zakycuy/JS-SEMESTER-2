@@ -9,7 +9,12 @@
 
 # 12.2.2 Output Verification
 
+Before
 ![Screenshot 2025-05-21 134618](https://github.com/user-attachments/assets/1619959c-1970-4b78-9ac2-71b948850621)
+
+After
+![image](https://github.com/user-attachments/assets/3c7b6239-b34b-40a7-a6f5-dbaaa0ad111f)
+
 
 # 12.2.3 Questions
 
