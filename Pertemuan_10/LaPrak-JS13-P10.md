@@ -42,7 +42,21 @@ After
 
 # 12.3.3 Questions
 
-1. 
+1. Remove or break the reference of the node that was originally before the head (with the code (head = head.next; head.prev = null;) which means move the head that was originally in the first position and then move to the next head, then after the head moves to the second order just break the reference or remove before the head or the first order
+
+2. Important because when the head is equal to tail or only 1 data is available, the code will be deleted with the code (head = tail = null;) which means that the head and tail are null or the code is equal to null.
+
+3. By using traverses that will move continuously until before the last code can be coded (tmp.next = null).
+
+4. The purpose is to prevent errors or exceptions when trying to remove nodes from an empty list because it avoids access to null pointers that can cause a NullPointerException.
+
+5. Using removeFirst where in the code we first check whether the list is empty or not when not then continue whether there is only one data or not when one data then uses the code (head = tail = null;) which means that the head and tail are null or the node is the same as null, when not then uses the code (head = head.next; head.prev = null;) which means moving the head which was originally in the first position and then moving to the next head, then after the head moves to the second order just break the reference or delete before the head or the first order.
+then use removeLast which uses the same code but is different at the end, namely using the code (tail = tail.prev; tail.next = null;) which means moving the tail which was originally at the end of the list to the previous node then deciding the reference or deleting the last sequence before the tail.
+
+6. with the code (temp.prev.next = temp.next; temp.next.prev = temp.prev;) means connecting between 2 lists such as the sequence A <-> B <-> C <-> D If we want to delete node C (which is in the middle), then we need to connect the node before C (ie B) directly to the node after C (ie D).
+
+7. 
+
 
 
 
