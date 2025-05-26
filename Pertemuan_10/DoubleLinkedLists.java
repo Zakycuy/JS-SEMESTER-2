@@ -49,6 +49,7 @@ public class DoubleLinkedLists {
                     temp.next.prev = newNode;
                     temp.next = newNode;
                 }
+                break;
             }
             temp = temp.next;
 
@@ -68,6 +69,47 @@ public class DoubleLinkedLists {
             System.out.println("");
         } else {
             System.out.println("Double linked list is currentlyempty!!");
+        }
+    }
+
+    void removeFirst() {
+        if (isEmpty()) {
+            System.out.println("Double linked list is currently empty!!");
+        } else if (head == tail) {
+            head = tail = null;
+        } else {
+            head = head.next;
+            head.prev = null;
+        }
+    }
+
+    void removeLast() {
+        if (isEmpty()) {
+            System.out.println("Double linked list is currently empty!!");
+        } else if (head == tail) {
+            head = tail = null;
+        } else {
+            tail = tail.prev;
+            tail.next = null;
+        }
+    }
+
+    void remove(int index) {
+        if (isEmpty()) {
+            System.out.println("Double linked list is currently empty!!");
+        } else if (index == 0) {
+            removeFirst();
+        } else {
+            Node temp = head;
+            for (int i = 0; i < index; i++) {
+                temp = temp.next;
+            }
+            if (temp == tail) {
+                removeLast();
+            } else {
+                temp.prev.next = temp.next;
+                temp.next.prev = temp.prev;
+            }
         }
     }
 }
