@@ -97,7 +97,22 @@ public class DoubleLinkedLists {
     void remove(int index) {
         if (isEmpty()) {
             System.out.println("Double linked list is currently empty!!");
-        } else if (index == 0) {
+            return;
+        }
+
+        int size = 0;
+        Node countTemp = head;
+        while (countTemp != null) {
+            size++;
+            countTemp = countTemp.next;
+        }
+
+        if (index < 0 || index >= size) {
+            System.out.println("Index " + index + " is out of bounds!");
+            return;
+        }
+
+        if (index == 0) {
             removeFirst();
         } else {
             Node temp = head;
