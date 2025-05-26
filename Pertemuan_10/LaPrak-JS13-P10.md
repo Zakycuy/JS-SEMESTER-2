@@ -55,7 +55,8 @@ then use removeLast which uses the same code but is different at the end, namely
 
 6. with the code (temp.prev.next = temp.next; temp.next.prev = temp.prev;) means connecting between 2 lists such as the sequence A <-> B <-> C <-> D If we want to delete node C (which is in the middle), then we need to connect the node before C (ie B) directly to the node after C (ie D).
 
-7. 
+7. ![image](https://github.com/user-attachments/assets/0e561dde-6827-4db3-bd21-a2771187c9d3)
+
 
 
 
