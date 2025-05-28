@@ -22,5 +22,21 @@ public class DoubleLinkedListsMain {
         dll.print();
         dll.remove(1);
         dll.print();
+
+        System.out.println("Size: " + dll.getSize());
+        System.out.println("Index of NIM 114: " + dll.indexOf("114"));
+
+        System.out.println("Add student at index 1:");
+        dll.add(1, new Student("117", "Anya", "TI-1I", 3.65));
+        dll.print();
+
+        System.out.println("Remove node after NIM 114:");
+        dll.removeAfter("114");
+        dll.print();
+
+        System.out.println("Get first: " + dll.getFirst().name);
+        System.out.println("Get last: " + dll.getLast().name);
+        System.out.println("Get index 1: " + dll.getIndex(1).name);
+
     }
 }

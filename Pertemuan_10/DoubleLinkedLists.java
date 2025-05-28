@@ -127,4 +127,109 @@ public class DoubleLinkedLists {
             }
         }
     }
+
+    void add(int index, Student data) {
+        if (index < 0) {
+            System.out.println("Invalid index!");
+            return;
+        }
+
+        if (index == 0) {
+            addFirst(data);
+            return;
+        }
+
+        Node temp = head;
+        int currentIndex = 0;
+
+        while (temp != null && currentIndex < index) {
+            temp = temp.next;
+            currentIndex++;
+        }
+
+        if (temp == null) {
+            addLast(data);
+        } else {
+            Node newNode = new Node(data);
+            newNode.prev = temp.prev;
+            newNode.next = temp;
+            temp.prev.next = newNode;
+            temp.prev = newNode;
+        }
+    }
+
+    void removeAfter(String key) {
+        Node temp = head;
+        while (temp != null) {
+            if (temp.data.nim.equalsIgnoreCase(key)) {
+                if (temp.next == null) {
+                    System.out.println("No node exists after the specified key.");
+                    return;
+                } else {
+                    Node toDelete = temp.next;
+                    temp.next = toDelete.next;
+                    if (toDelete.next != null) {
+                        toDelete.next.prev = temp;
+                    } else {
+                        tail = temp;
+                    }
+                    return;
+                }
+            }
+            temp = temp.next;
+        }
+        System.out.println("Key not found: " + key);
+    }
+
+    Student getFirst() {
+        if (!isEmpty()) {
+            return head.data;
+        }
+        return null;
+    }
+
+    Student getLast() {
+        if (!isEmpty()) {
+            return tail.data;
+        }
+        return null;
+    }
+
+    Student getIndex(int index) {
+        if (index < 0)
+            return null;
+
+        Node temp = head;
+        int currentIndex = 0;
+        while (temp != null) {
+            if (currentIndex == index)
+                return temp.data;
+            temp = temp.next;
+            currentIndex++;
+        }
+        return null;
+    }
+
+    int getSize() {
+        int count = 0;
+        Node temp = head;
+        while (temp != null) {
+            count++;
+            temp = temp.next;
+        }
+        return count;
+    }
+
+    int indexOf(String nimKey) {
+        int index = 0;
+        Node temp = head;
+        while (temp != null) {
+            if (temp.data.nim.equalsIgnoreCase(nimKey)) {
+                return index;
+            }
+            index++;
+            temp = temp.next;
+        }
+        return -1; 
+    }
 }
