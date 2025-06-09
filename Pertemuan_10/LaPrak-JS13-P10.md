@@ -57,6 +57,11 @@ then use removeLast which uses the same code but is different at the end, namely
 
 7. ![image](https://github.com/user-attachments/assets/0e561dde-6827-4db3-bd21-a2771187c9d3)
 
+# 12.5 Assignments
+
+Result = ![image](https://github.com/user-attachments/assets/32ed6982-1b40-4da0-abc5-bd5b6ef77405), ![image](https://github.com/user-attachments/assets/930484c3-0cad-4647-9ed7-788e8f212190)
+
+
 
 
 
