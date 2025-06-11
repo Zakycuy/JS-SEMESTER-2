@@ -30,10 +30,20 @@ public class BinaryTreeMain23 {
         bst.traversePreOrder(bst.root);
         System.out.println("Post-order traversal:");
         bst.traversePostOrder(bst.root);
-        
+
         System.out.println("Data deletion");
         bst.delete(3.57);
         System.out.println("Student list after deletion:");
         bst.traverseInOrder(bst.root);
+
+        bst.addRekursif(new Student23("244107020300", "Ali", "TI-1I", 3.2));
+        bst.addRekursif(new Student23("244107020301", "Budi", "TI-1I", 3.8));
+        bst.addRekursif(new Student23("244107020302", "Cici", "TI-1I", 2.9));
+
+        System.out.println("IPK Terendah = " + bst.getMinIPK().name);
+        System.out.println("IPK Tertinggi = " + bst.getMaxIPK().name);
+
+        bst.displayStudentsWithIPKAbove(3.0);
+
     }
 }

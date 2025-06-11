@@ -151,4 +151,53 @@ public class BinaryTree23 {
             successor.left = current.left;
         }
     }
+
+    public void addRekursif(Student23 data) {
+        root = addRekursif(root, data);
+    }
+
+    private Node23 addRekursif(Node23 current, Student23 data) {
+        if (current == null) {
+            return new Node23(data);
+        }
+
+        if (data.ipk < current.data.ipk) {
+            current.left = addRekursif(current.left, data);
+        } else if (data.ipk > current.data.ipk) {
+            current.right = addRekursif(current.right, data);
+        }
+
+        return current;
+    }
+
+    public Student23 getMinIPK() {
+        Node23 current = root;
+        while (current.left != null) {
+            current = current.left;
+        }
+        return current.data;
+    }
+
+    public Student23 getMaxIPK() {
+        Node23 current = root;
+        while (current.right != null) {
+            current = current.right;
+        }
+        return current.data;
+    }
+
+    public void displayStudentsWithIPKAbove(double threshold) {
+        displayAboveThreshold(root, threshold);
+    }
+
+    private void displayAboveThreshold(Node23 node, double threshold) {
+        if (node != null) {
+            displayAboveThreshold(node.left, threshold);
+            if (node.data.ipk > threshold) {
+                node.data.print();
+            }
+            displayAboveThreshold(node.right, threshold);
+        }
+    }
+
 }

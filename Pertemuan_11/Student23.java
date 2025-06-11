@@ -1,7 +1,7 @@
 package Pertemuan_11;
 
 public class Student23 {
-    String nim, name, className;
+    public String nim, name, className;
     double ipk;
 
     public Student23() {

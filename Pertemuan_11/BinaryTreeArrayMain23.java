@@ -1,8 +1,8 @@
 package Pertemuan_11;
 
-public class BinaryTreeArrayMain00 {
+public class BinaryTreeArrayMain23 {
     public static void main(String[] args) {
-        BinaryTreeArray00 bta = new BinaryTreeArray00();
+        BinaryTreeArray23 bta = new BinaryTreeArray23();
         Student23 m1 = new Student23("244107020138", "Devin", "TI-1I", 3.57);
         Student23 m2 = new Student23("244107020023", "Dewi", "TI-1I", 3.85);
         Student23 m3 = new Student23("244107020225", "Wahyu", "TI-1I", 3.21);
@@ -14,5 +14,8 @@ public class BinaryTreeArrayMain00 {
         bta.populateData(data, data.length - 1);
         System.out.println("In-order traversal:");
         bta.traverseInOrder(0);
+
+        System.out.println("\nPre-order traversal:");
+        bta.traversePreOrder();
     }
 }
